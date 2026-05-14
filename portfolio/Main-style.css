@@ -1,0 +1,622 @@
+/* variables */
+:root {
+  /* ==== Global ==== */
+  --canvas-width: 1440px;
+  --canvas-padding: 40px;
+  --font-family: 'Poppins', sans-serif;
+  --color-primary: #F5B800;
+  --color-secondary: #1E1E1E;
+  --color-accent: #FFFFFF;
+  --border-radius: 8px;
+  --section-spacing: 80px;
+  --max-content-width: 1200px;
+  --primary-font-size: 2vw;
+  --secondary-font-size: 1vw;
+  --letter-space: 1.5px;
+  --box-shadow: 0px 0px 10px var(--color-secondary);
+} 
+
+/* Global */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  box-sizing: border-box;
+}
+body main{
+  display: flex;
+  overflow: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+li{
+  list-style: none;
+  
+}
+
+/* left */
+section#left{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+section .colorBox1{
+  background-color: var(--color-primary);
+  width: 10vw;
+  height: 40vh;
+  box-shadow: var(--box-shadow);
+}
+section#left .content{
+  padding: 0 5em 0 4em;
+  height: 50vh;
+}
+
+/* hi there */
+section#left .content h2{
+  color: var(--color-primary);
+  font-size: var(--primary-font-size);
+  font-weight: 800;
+  transform: scaleY(1.4); 
+  margin-bottom: 2vw;
+}
+section#left .content h2 span{
+  position: relative;
+}
+section#left .content h2 span::after{
+  position: absolute;
+  content:"";
+  bottom:-3px;
+  height: 3px;
+  width: 4em;
+  left: -100%;
+  background-color: var(--color-primary);
+}
+
+/* i'm amarachi */
+section#left h1{
+  color: var(--color-primary);
+  font-size: 3vw;
+  letter-spacing: var(--letter-space);
+}
+section#left h1 span.headSpan_img{
+  color: var(--color-secondary);
+}
+
+/* graphic text */
+section#left p.littleBolder1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  width: 26vw;
+  padding: .25vw;
+  margin: 1vw 0 .5vw 0;
+  font-size: var(--secondary-font-size);
+  font-weight: bolder;
+  letter-spacing: var(--letter-space);
+}
+section#left p.littleBolder2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-secondary);
+  width: 26vw;
+  padding: .25vw;
+  margin: 0 0 .5vw 0;
+  font-size: var(--secondary-font-size);
+  color: var(--color-primary);
+  font-weight: bolder;
+  letter-spacing: var(--letter-space);
+}
+section#left p.text{
+  font-size: 1.1vw;
+  letter-spacing: var(--letter-space);
+  margin: 3vw 0 3vw 0;
+}
+section#left button{
+  padding: 1vw;
+  border-radius: 100rem;
+  border: none;
+  background-color: var(--color-secondary);
+  cursor: pointer;
+  font-size: var(--secondary-font-size);
+  transition: all .3s ease-in-out;
+  box-shadow: var(--box-shadow);
+}
+section#left button .btn{
+  color: white;
+}
+section#left button:hover{
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  transform: scale(1.1);
+  box-shadow: var(--box-shadow);
+}
+section#left .btn-wrapper{
+  display: flex;
+  gap: 1.5vw;
+}
+
+/* right */
+section#right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  justify-content: space-between;
+}
+section#right .curvedMenu{
+  height: 100vh;
+  display: flex;
+  width: clamp(1px, 100vw, 500px);
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+section#right .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(.5vw, 3.2vw, 5vw);
+}
+/* amarachi image  */
+section#right img.profilePic{
+  width:  clamp(.5vw, 35vw, 40vw);
+  border-radius: 100%;
+  animation: picScaling 1.5s ease-in-out;
+  box-shadow: var(--box-shadow);;
+}
+@keyframes picScaling{
+  0%{
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+/* curved task bar */
+section#right .curvedMenu::before{
+  content: "";
+  position: absolute;
+  width: clamp(1vw, 42vw, 60vw);
+  height: clamp(1vw, 42vw, 60vw);
+  border-radius: 50%;
+  border: clamp(1px, 5px, 32.5rem) solid;
+  border-color: transparent var(--color-primary) var(--color-primary) transparent;
+  rotate: 315deg;
+} 
+/* buttons */
+section#right .curvedMenu ul#taskBarBtns{
+  position: absolute;
+  left: 50%;
+  transform-origin:center center ;
+  animation: orbit 2s ease-in-out 1 reverse;
+}
+@keyframes orbit{
+  0%{
+    transform: translate(-50%,-50%) rotate(0deg);
+  }
+  100%{
+    transform: translate(-50%,-50%) rotate(360deg);
+  } 
+}
+section#right .curvedMenu ul#taskBarBtns .taskBar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section#right .curvedMenu ul li{
+  transform: 
+    rotate(var(--angle))
+    translate(clamp(1rem, 610%, 800rem))
+    rotate(calc(-1*var(--angle)))
+    translate(-50%,-50%)
+  ;
+  transform-origin: center center;
+  animation: orbitFromInside 2s ease-in-out 1 forwards;
+  position: absolute;
+  border-radius: 100%;
+}
+@keyframes orbitFromInside{
+  0%{
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+section#right .curvedMenu a.taskBar img{
+  width:clamp(2vw, 3.5vw, 50px);
+  background-color: var(--color-secondary);
+  border-radius: 100%;
+  padding: clamp(0.4vw, 1vw, 10px);
+  transition: all .3s ease-in-out;
+  box-shadow: var(--box-shadow);
+}
+section#right .curvedMenu a.taskBar img:hover{
+  transform:scale(1.3);
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+section#right .curvedMenu a.taskBar img.homeIcon{
+  border: var(--color-primary) solid 3px ;
+}
+/* dot on curve */
+section#right .dotOnCurve{
+  content: "";
+  width: clamp(.5vw, 1vw, 5vw);
+  height: clamp(.5vw, 1vw, 5vw);
+  background-color: var(--color-primary);
+  border: #F5B800 solid;
+  border-radius: 50%;
+}
+section#right .colorBox2{
+  background-color: var(--color-primary);
+  width: 2.5vw;
+  height: 40vh;
+  box-shadow: var(--box-shadow);
+}
+
+.mobile-bottom-nav{
+  display: none;
+}
+/* ========== MOBILE LAYOUT - NO PROFILE PICTURE ========== */
+@media only screen and (max-width: 767px) {
+  
+  /* 1. RESET AND BASE STYLES */
+  body {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 70px;
+    background-color: white !important;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  body main {
+    flex-direction: column !important;
+    height: calc(100vh - 70px);
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow-y: auto;
+  }
+  
+  /* 2. HIDE DESKTOP-ONLY ELEMENTS */
+  section .colorBox1,
+  section#right .colorBox2,
+  section#right .dotOnCurve,
+  section#right .curvedMenu::before,
+  section#right img.profilePic, /* Hide profile picture */
+  section#right .curvedMenu .container { /* Hide container with dots */
+    display: none !important;
+  }
+  
+  /* 3. HIDE RIGHT SECTION COMPLETELY (since no picture) */
+  section#right {
+    display: none !important;
+  }
+  
+  /* 4. LEFT SECTION - FULL WIDTH CONTENT */
+  section#left {
+    order: 1 !important;
+    width: 100% !important;
+    height: 100% !important;
+    padding: 40px 20px !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  
+  /* 5. CONTENT SECTION - Center everything */
+  section#left .content {
+    padding: 0 !important;
+    height: auto !important;
+    width: 100% !important;
+    max-width: 500px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+  }
+  
+  /* "HI THERE!" - Keep exact styling */
+  section#left .content h2 {
+    color: #F5B800 !important;
+    font-size: 32px !important;
+    font-weight: 800 !important;
+    transform: none !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+  }
+  
+  section#left .content h2 span {
+    position: relative !important;
+  }
+  
+  section#left .content h2 span::after {
+    position: absolute !important;
+    content: "" !important;
+    bottom: -5px !important;
+    height: 3px !important;
+    width: 70px !important;
+    left: calc(50% - 35px) !important;
+    background-color: #F5B800 !important;
+  }
+  
+  /* "I'M AMARACHI" - Keep exact styling */
+  section#left h1 {
+    color: #F5B800 !important;
+    font-size: 36px !important;
+    letter-spacing: 1.5px !important;
+    text-align: center !important;
+    margin-bottom: 20px !important;
+  }
+  
+  section#left h1 span.headSpan_img {
+    color: #1E1E1E !important;
+  }
+  
+  /* "GRAPHIC DESIGNER" badges - Keep exact styling */
+  section#left p.littleBolder1 {
+    display: block !important;
+    background-color: #F5B800 !important;
+    color: #1E1E1E !important;
+    width: 90% !important;
+    max-width: 350px !important;
+    padding: 12px !important;
+    margin: 15px auto !important;
+    font-size: 16px !important;
+    font-weight: bolder !important;
+    letter-spacing: 1.5px !important;
+    border-radius: 8px !important;
+    box-shadow: 0px 0px 10px #1E1E1E !important;
+  }
+  
+  section#left p.littleBolder2 {
+    display: block !important;
+    background-color: #1E1E1E !important;
+    color: #F5B800 !important;
+    width: 90% !important;
+    max-width: 350px !important;
+    padding: 12px !important;
+    margin: 10px auto 25px auto !important;
+    font-size: 16px !important;
+    font-weight: bolder !important;
+    letter-spacing: 1.5px !important;
+    border-radius: 8px !important;
+    box-shadow: 0px 0px 10px #1E1E1E !important;
+  }
+  
+  /* Description text */
+  section#left p.text {
+    font-size: 18px !important;
+    letter-spacing: 1.5px !important;
+    margin: 25px 0 30px 0 !important;
+    color: #1E1E1E !important;
+    line-height: 1.6 !important;
+    text-align: center !important;
+    width: 90% !important;
+    max-width: 500px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  /* Buttons - Keep exact styling */
+  section#left .btn-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    width: 100% !important;
+    max-width: 350px !important;
+    margin: 0 auto !important;
+  }
+  
+  section#left button {
+    padding: 16px 32px !important;
+    border-radius: 100rem !important;
+    border: none !important;
+    background-color: #1E1E1E !important;
+    cursor: pointer !important;
+    font-size: 16px !important;
+    transition: all .3s ease-in-out !important;
+    box-shadow: 0px 0px 10px #1E1E1E !important;
+    width: 100% !important;
+  }
+  
+  section#left button .btn {
+    color: white !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+  }
+  
+  section#left button:hover {
+    background-color: #F5B800 !important;
+    color: #1E1E1E !important;
+    transform: scale(1.05) !important;
+    box-shadow: 0px 0px 15px #1E1E1E !important;
+  }
+  
+  section#left button:hover .btn {
+    color: #1E1E1E !important;
+  }
+  
+  /* 6. BOTTOM NAVIGATION */
+  .mobile-bottom-nav {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 70px !important;
+    background-color: #1E1E1E !important;
+    display: flex !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+    padding: 0 10px !important;
+    z-index: 1000 !important;
+    box-shadow: 0 -2px 10px rgba(30, 30, 30, 0.3) !important;
+    border-top: 3px solid #F5B800 !important;
+  }
+  
+  .mobile-bottom-nav a {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+    color: white !important;
+    flex: 1 !important;
+    padding: 8px 0 !important;
+    transition: all .3s ease-in-out !important;
+    min-height: 44px !important;
+    min-width: 44px !important;
+  }
+  
+  .mobile-bottom-nav a img {
+    width: 22px !important;
+    height: 22px !important;
+    margin-bottom: 4px !important;
+    filter: invert(1) !important;
+    padding: 4px !important;
+    border-radius: 50% !important;
+    background-color: transparent !important;
+    transition: all .3s ease-in-out !important;
+  }
+  
+  .mobile-bottom-nav a span {
+    font-size: 10px !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.5px !important;
+  }
+  
+  .mobile-bottom-nav a:hover,
+  .mobile-bottom-nav a:active {
+    background-color: #F5B800 !important;
+    border-radius: 8px !important;
+  }
+  
+  .mobile-bottom-nav a:hover img {
+    filter: invert(0) !important;
+    background-color: transparent !important;
+  }
+  
+  .mobile-bottom-nav a:hover span {
+    color: #1E1E1E !important;
+  }
+  
+  /* 7. HIDE DESKTOP NAVIGATION */
+  section#right .curvedMenu ul#taskBarBtns {
+    display: none !important;
+  }
+  
+  /* 8. HIDE SIDEBARS FROM OTHER PAGES */
+  aside.left-task-bar,
+  aside.right-task-bar {
+    display: none !important;
+  }
+  
+  /* 9. FIX OVERFLOW FOR OTHER PAGES */
+  body {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+  }
+}
+
+/* ========== SMALL MOBILE ========== */
+@media only screen and (max-width: 480px) {
+  body {
+    padding-bottom: 65px !important;
+  }
+  
+  body main {
+    height: calc(100vh - 65px) !important;
+  }
+  
+  section#left {
+    padding: 30px 15px !important;
+  }
+  
+  section#left .content h2 {
+    font-size: 28px !important;
+  }
+  
+  section#left h1 {
+    font-size: 32px !important;
+  }
+  
+  section#left p.littleBolder1,
+  section#left p.littleBolder2 {
+    font-size: 14px !important;
+    padding: 10px !important;
+    max-width: 300px !important;
+  }
+  
+  section#left p.text {
+    font-size: 16px !important;
+    margin: 20px 0 25px 0 !important;
+  }
+  
+  section#left .btn-wrapper {
+    gap: 15px !important;
+    max-width: 300px !important;
+  }
+  
+  section#left button {
+    padding: 14px 28px !important;
+    font-size: 15px !important;
+  }
+  
+  .mobile-bottom-nav {
+    height: 65px !important;
+  }
+  
+  .mobile-bottom-nav a img {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
+
+/* ========== LANDSCAPE ========== */
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+  body main {
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 20px !important;
+  }
+  
+  section#left {
+    width: 100% !important;
+    height: 100% !important;
+    padding: 20px !important;
+    justify-content: center !important;
+  }
+  
+  .mobile-bottom-nav {
+    height: 60px !important;
+  }
+  
+  section#left .btn-wrapper {
+    flex-direction: row !important;
+    max-width: 500px !important;
+    gap: 15px !important;
+  }
+  
+  section#left button {
+    width: auto !important;
+    min-width: 180px !important;
+  }
+}

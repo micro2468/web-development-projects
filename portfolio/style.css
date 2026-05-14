@@ -1,0 +1,880 @@
+/* variables */
+:root {
+  /* ==== Global ==== */
+  --canvas-width: 1440px;
+  --canvas-padding: 40px;
+  --font-family: 'Poppins', sans-serif;
+  --color-primary: #F5B800;
+  --color-secondary: #1E1E1E;
+  --color-tetary: #535252;
+  --color-accent: #FFFFFF;
+  --border-radius: 8px;
+  --section-spacing: 80px;
+  --max-content-width: 1200px;
+  --primary-font-size: 1.3vw;
+  --secondary-font-size: 1vw;
+  --letter-space: 1.5px;
+  --box-shadow: 0px 0px 10px var(--color-secondary);
+} 
+/* Global */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+}
+body{
+    display: flex;
+    background-color: #b7b7b7;
+    overflow: hidden;
+}  
+html {
+  scroll-behavior: smooth;
+} 
+a{
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+li{
+  list-style: none; 
+}
+/* left side bar */
+aside.left-task-bar{
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--color-primary);
+    box-shadow: var(--box-shadow);
+}
+/* Amarachi image */
+aside.left-task-bar .image-wrapper{
+    background-color: var(--color-tetary);
+    width: 19vw;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+aside.left-task-bar .image-wrapper img{
+    width: 17vw;
+    border: var(--color-accent) solid 3px;
+    border-radius: 100%;
+    
+}
+/* task bar */
+aside.left-task-bar ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 59.5vh;
+}
+aside.left-task-bar ul .task-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    padding: 5px 0 5px 0;
+}aside.left-task-bar ul .task-bar .active{
+    color: var(--color-accent);
+}
+aside.left-task-bar ul li{
+    font-size: var(--primary-font-size);
+    font-weight: bolder;
+    transition: all .5s;
+}
+aside.left-task-bar ul li:hover{
+    transform: scale(1.2);
+}
+
+/* about */
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 5vw 1vw 2vw 6vw;
+    }
+/* top of main */
+main .top header{
+    display: flex;
+    align-items: center;
+    margin: 0 0 2vw 0;
+}
+main .top header h1{
+    position: relative;
+    font-size: 6vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+main .top header h2{
+    position: absolute;
+    left: 21.5vw;
+    transform: scaleX(2.5);
+}
+main .top h2{
+    font-weight: lighter;
+    margin: 0 0 1.3vw 0;
+}
+main .top h2 span{
+    font-weight: 800;
+}
+main .top p{
+    font-size: 1.1vw;
+    line-height: 1.4vw;
+    margin: 0 0 1vw 0;
+}
+/* bottom of main */
+main .bottom{
+    display: flex;
+}
+
+/* bottom main left */
+main .bottom .left h1{
+    font-weight: 800;
+    font-size: 1.4vw;
+    border-radius: 100vw;
+    background-color: var(--color-primary);
+    width: 10vw;
+    padding: 0 1vw 0 1vw;
+    box-shadow: var(--box-shadow);
+}
+main .bottom .left .whatIdo{
+    display: flex;
+    flex-direction: column;
+    margin-top: .5vw;
+    width: 28vw;
+    height: 43vh;
+    justify-content: space-around;
+}
+main .bottom .left .whatIdo .text-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+/* image on bottom test */
+main .bottom .left .whatIdo .text-wrapper img{
+    width: 6vw;
+    box-shadow: var(--box-shadow);
+    border-radius: 100%;
+    
+}
+main .bottom .left .whatIdo .text-wrapper .text h3{
+    font-size: 1.2vw;
+}
+main .bottom .left .whatIdo .text-wrapper .text p{
+    font-size: .9vw;
+}
+/* bottom main right */
+main .bottom .right{
+    width: 35vw;
+    margin-left: 3vw;
+}
+main .bottom .right h1{
+    font-weight: 800;
+    font-size: 1.4vw;
+    border-radius: 100vw;
+    background-color: var(--color-primary);
+    width: 10vw;
+    padding: 0 1vw 0 1vw;
+    box-shadow: var(--box-shadow);
+}
+main .bottom .right .fun-fact-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 43vh;
+}
+main .bottom .right .fun-fact-wrapper .in{
+    width: 35vw;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-content: center; 
+}
+main .bottom .right .fun-fact-wrapper .in .fun-fact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: var(--color-secondary);
+    border-radius: 100%;
+    height: 8vw;
+    width: 8vw;
+    color: var(--color-accent);
+    padding: .5vw;
+    box-shadow: var(--box-shadow);
+}
+main .bottom .right .fun-fact-wrapper .in .fun-fact h2{
+    color: var(--color-primary);
+    font-size: 2vw;
+}
+main .bottom .right .fun-fact-wrapper .in .fun-fact p{
+    font-size: .9vw;
+}
+/* right task bar */
+aside.right-task-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 10vw;
+    position: relative;
+    
+    padding-right: 1vw;
+    
+}
+aside.right-task-bar::before{
+    content: "";
+    position: absolute;
+    height: 36vw;
+    width: .5vw;
+    background-color: var(--color-secondary);
+    left: 1.6vw;
+    z-index: -1;
+    box-shadow: var(--box-shadow);
+}
+aside.right-task-bar .dotOnCurve{
+  width: clamp(.5vw, 1vw, 5vw);
+  height: clamp(.5vw, 1vw, 5vw);
+  background-color: var(--color-secondary);
+  border: var(--color-secondary) solid;
+  border-radius: 50%;
+  box-shadow: var(--box-shadow);
+  margin: 3vw 0 3vw 0;
+}
+aside.right-task-bar ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5vw;
+    
+}
+aside.right-task-bar ul li .taskBar{
+    display: flex;
+    background-color: var(--color-secondary);
+    border-radius: 100%;
+    padding: clamp(0.4vw, 0vw, 10px);
+    transition: all .5s;
+    animation: taskBarAnimation .5s ease-in-out;
+    box-shadow: var(--box-shadow);
+}
+@keyframes taskBarAnimation{
+    0%{
+        transform: translate(0,0) scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0,0) scale(1);
+        opacity: 1;
+    }
+}
+
+aside.right-task-bar ul li .taskBar:hover{
+    transform: scale(1.2);
+    background-color: var(--color-primary);
+}
+aside.right-task-bar ul li img{
+    font-size: 1vw;
+    padding: .5vw;
+}
+
+
+
+/* RESUME STYLE SHEET */
+main .body-top{
+    display: flex;
+    flex-direction: column;
+}
+main .text-section-wrapper{
+    display: flex;
+    gap: 2vw;
+}
+/* experience and education */
+main .mini-head{
+    font-size: 1.5vw;
+    background-color: var(--color-primary);
+    width: 11vw;
+    padding: .5vw;
+    border-radius: 50vw;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+main .middle-content{
+    display: flex;
+    gap: 2vw;
+}
+main .body-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    margin-right: 3vw;
+}
+main .text-section{
+    display: flex;
+    flex-direction: column;
+    gap: vw;
+}
+main .text-section h3{  
+    width: 10vw;
+    text-align: center;
+    border-radius: 50vw;
+    padding: .2vw;
+    margin: 1vw 0 .5vw 0;
+    background-color: var(--color-secondary);
+    color: var(--color-accent);
+    font-size: 1.3vw;
+    box-shadow: var(--box-shadow);
+}
+main .text-section p{
+    font-size: 1.1vw;
+    text-align: justify;
+}
+
+/* PORTFOLIO */
+/* image grid */
+main .image-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    margin-right: 3.5vw;
+    width: 66vw;
+}
+main .image-wrapper img{
+    width: 15.5vw;
+    border-radius: 1vw;
+    box-shadow: var(--box-shadow);
+}
+main .image-wrapper .image-section{
+    display: flex; 
+    gap: 1vw;
+}
+
+
+/* TESTIMONIALS */
+section.testimonial{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    margin-right: 2.5vw;
+    width: 67vw;
+}
+section.testimonial .top{
+    display: flex;
+    height: 31vh;
+    gap: 1vw;
+}
+section.testimonial .top .card{
+    display: flex;
+    background-color: var(--color-tetary);
+    padding: 1vw;
+    gap: 1vw;
+    color: var(--color-accent);
+    box-shadow: var(--box-shadow);
+}
+section.testimonial .top .card .card-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    text-align: center;
+    color: var(--color-primary);
+}
+section.testimonial .top .card .card-right{
+    display: flex;
+    flex-direction: column;
+    gap: .7vw;
+}
+section.testimonial .top .card .card-right h1{
+    color: var(--color-primary);
+    font-weight: 800;
+}
+section.testimonial img{
+    width: 10vw;
+    border-radius: .8vw;
+}
+
+
+
+/* CONTACT */
+section.body{
+    width: 69.5vw;
+}
+section.body .top p{
+    padding-right: 2vw;
+}
+section.body .top h3{
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 1vw;
+}
+section.body .top h3 span{
+    font-weight: 790;
+}
+section.body .bottom{
+    display: flex;
+    align-items: center;
+    flex-direction: column;gap: 2vw;
+}
+section.body .bottom .contact-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+section.body .bottom .contact-wrapper .contact{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 1.5vw;
+margin-top: 1vw;
+width: 17vw;
+height: 16vw;
+}
+section.body .bottom .contact-wrapper .contact img{
+    width: 5vw;
+    padding: 2vw;
+    background-color: var(--color-primary);
+    border-radius: 100vw;
+}
+section.body .bottom footer{
+    font-weight: 900;
+    margin-top: 1vw;
+}   
+
+/* ========== MOBILE VIEW ONLY (up to 767px) ========== */
+@media screen and (max-width: 767px) {
+    /* Better active state feedback */
+  aside.left-task-bar ul li:active,
+  aside.right-task-bar ul li:active,
+  section#left button:active,
+  section#right .curvedMenu a.taskBar:active {
+    transform: scale(0.95);
+    opacity: 0.9;
+  }
+  
+  /* Keep colors, only adjust layout */
+  body {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    overflow:visible;
+    overflow-x: hidden;
+  }
+
+  
+  
+  /* LEFT TASK BAR - Keep but make it horizontal header */
+  aside.left-task-bar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    
+  }
+  
+  aside.left-task-bar .image-wrapper {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    background-color: transparent;
+  }
+  
+  aside.left-task-bar .image-wrapper img {
+    width: 50px;
+    height: 50px;
+    border: var(--color-accent) solid 2px;
+  }
+  
+  aside.left-task-bar ul {
+    display: none;
+  }
+
+aside.left-task-bar .image-wrapper img{
+    width: 15vw;
+    height: 70px;
+}
+  
+  /* Remove arrows */
+  aside.left-task-bar ul .arrow {
+    display: none;
+  }
+  
+  aside.left-task-bar ul .task-bar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    justify-content: center;
+  }
+  
+  aside.left-task-bar ul li {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  
+  /* MAIN CONTENT - Keep design, adjust layout */
+  main.middle-content {
+    margin: 20px 15px;
+    width: calc(100% - 30px);
+  }
+  
+  /* Keep the arrow and heading design */
+  main .top header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  main .top header h1 {
+    font-size: 40px;
+    position: relative;
+  }
+  
+  main .top header h2 {
+    position: absolute;
+    left: -25px;
+    transform: scaleX(2);
+  }
+  
+  main .top h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: lighter;
+  }
+  
+  main .top h2 span {
+    font-weight: 800;
+  }
+  
+  main .top p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+  
+  /* BOTTOM SECTIONS - Keep design but stack */
+  main .bottom {
+    flex-direction: column;
+  }
+  
+  main .bottom .left,
+  main .bottom .right {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  /* Keep the "What i do?" design */
+  main .bottom .left h1,
+  main .bottom .right h1 {
+    font-size: 18px;
+    padding: 8px 20px;
+    width: auto;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  /* Keep the content boxes design */
+  main .bottom .left .whatIdo {
+    width: 100%;
+    height: auto;
+    gap: 20px;
+  }
+  
+  main .bottom .left .whatIdo .text-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  main .bottom .left .whatIdo .text-wrapper img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+  }
+  
+  main .bottom .left .whatIdo .text-wrapper .text h3 {
+    font-size: 16px;
+  }
+  
+  main .bottom .left .whatIdo .text-wrapper .text p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  /* Keep fun facts circles */
+  main .bottom .right .fun-fact-wrapper {
+    height: auto;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  main .bottom .right .fun-fact-wrapper .in {
+    width: 100%;
+    justify-content: space-around;
+  }
+  
+  main .bottom .right .fun-fact-wrapper .in .fun-fact {
+    width: 150px;
+    height: 150px;
+    margin: 10px 0;
+  }
+  
+  main .bottom .right .fun-fact-wrapper .in .fun-fact h2 {
+    font-size: 28px;
+  }
+  
+  main .bottom .right .fun-fact-wrapper .in .fun-fact p {
+    font-size: 13px;
+  }
+  
+  /* RIGHT TASK BAR - Keep but make it bottom navigation */
+  aside.right-task-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+    background: var(--color-primary);
+    z-index: 100;
+  }
+  
+  /* Remove the decorative line */
+  aside.right-task-bar::before {
+    display: none;
+  }
+  
+  /* Remove dots */
+  aside.right-task-bar .dotOnCurve {
+    display: none;
+  }
+  
+  /* Keep icon design, make horizontal */
+  aside.right-task-bar ul {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0;
+    width: 100%;
+  }
+  
+  aside.right-task-bar ul li .taskBar {
+    animation: taskBarAnimation .5s ease-in-out;
+    background-color: var(--color-secondary);
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  aside.right-task-bar ul li img {
+    width: 22px;
+    height: 22px;
+    padding: 0;
+  }
+  
+  aside.right-task-bar ul li .taskBar:hover {
+    transform: scale(1.1);
+    background-color: var(--color-primary);
+  }
+  
+  /* PORTFOLIO PAGE - Keep grid, adjust columns */
+  main .image-wrapper {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 70px;
+  }
+  
+  main .image-wrapper .image-section {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  main .image-wrapper img {
+    width: calc(50% - 10px);
+    height: auto;
+    min-width: 150px;
+  }
+  
+  /* TESTIMONIALS - Keep card design */
+  section.testimonial {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0px;
+    margin-bottom: 70px;
+  }
+  
+  section.testimonial .top {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+  
+  section.testimonial .top .card {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  section.testimonial img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  /* CONTACT PAGE - Keep contact boxes */
+  section.body {
+    width: 100%;
+    margin-bottom: 70px;
+  }
+  
+  section.body .bottom .contact-wrapper {
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  section.body .bottom .contact-wrapper .contact {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  section.body .bottom .contact-wrapper .contact img {
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+  }
+  section.body .bottom footer{
+    font-weight: 900;
+    margin-top: 15px;
+    text-align: center;
+}  
+  
+  /* RESUME PAGE - Keep section design */
+  main .text-section-wrapper {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 70px;
+    padding-left: 20px;
+  }
+  
+  main .text-section {
+    width: 100%;
+    padding: 20px;
+    background: rgba(245, 184, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  main .mini-head {
+    font-size: 18px;
+    padding: 8px 25px;
+    width: auto;
+    margin-bottom: 20px;
+  }
+  
+  main .text-section h3 {
+    width: auto;
+    padding: 6px 20px;
+    font-size: 14px;
+  }
+  
+  main .text-section p {
+    font-size: 14px;
+  }
+}
+
+/* ========== VERY SMALL MOBILE (up to 480px) ========== */
+@media screen and (max-width: 480px) {
+  
+  aside.left-task-bar {
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  aside.left-task-bar .image-wrapper {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  aside.left-task-bar .image-wrapper img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  aside.left-task-bar ul {
+    padding-left: 0;
+  }
+  
+  aside.left-task-bar ul .task-bar {
+    gap: 8px;
+  }
+  
+  aside.left-task-bar ul li {
+    font-size: 11px;
+  }
+  
+  main .top header h1 {
+    font-size: 32px;
+  }
+  
+  main .top header h2 {
+    left: -20px;
+    transform: scaleX(1.5);
+  }
+  
+  /* Single column for portfolio */
+  main .image-wrapper img {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  /* Stack fun facts */
+  main .bottom .right .fun-fact-wrapper .in .fun-fact {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+/* ========== LANDSCAPE MOBILE ========== */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  
+  body {
+    flex-direction: row;
+  }
+  
+  aside.left-task-bar {
+    width: 25%;
+    height: 100vh;  
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  
+  main.middle-content {
+    margin-left: 27%;
+    width: calc(73% - 40px);
+  }
+  
+  aside.right-task-bar {
+    width: 60px;
+    height: 100vh;
+    right: 0;
+    left: auto;
+    bottom: auto;
+    top: 0;
+    background: transparent;
+  }
+  
+  aside.right-task-bar ul {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDG Babcock University | Google Developer Group</title>
+    <link rel="icon" href="GDG-icon.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="GDG-icon.jpg" alt="GDG Logo">
+                <span>GDG Babcock</span>
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="btn-primary">Join Us</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Google Developer Group <span>Babcock University</span></h1>
+                <p>Connecting developers, students and tech enthusiasts to learn, share and grow together.</p>
+                <div class="hero-buttons">
+                    <a href="#events" class="btn-primary">Upcoming Events</a>
+                    <a href="#" class="btn-secondary">Become a Member</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="GDG23.png" alt="GDG Banner">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+    <div class="container">
+        <div class="section-header">
+            <h2>About GDG Babcock</h2>
+            <p>We are a community of passionate developers and tech enthusiasts at Babcock University</p>
+        </div>
+        <div class="about-content">
+            <!-- Image on the LEFT -->
+            <div class="about-image">
+                <img src="image00019.jpeg" alt="GDG Event">
+            </div>
+            <!-- Text + Checklist on the RIGHT -->
+            <div class="about-text">
+                <p>Google Developer Groups (GDG) are community groups for developers who are interested in Google's developer technology.</p>
+                <p>At GDG Babcock, we organize workshops, hackathons, speaker sessions and more to help students grow their technical skills and network with industry professionals.</p>
+                <ul class="about-features">
+                    <li><i class="fas fa-check-circle"></i> Free workshops & training</li>
+                    <li><i class="fas fa-check-circle"></i> Networking opportunities</li>
+                    <li><i class="fas fa-check-circle"></i> Hands-on coding sessions</li>
+                    <li><i class="fas fa-check-circle"></i> Access to Google resources</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Focus Areas Section -->
+<section class="tracks" id="tracks">
+    <div class="container">
+      <div class="section-header">
+        <h2>Focus Areas</h2>
+        <p>Explore our specialized learning tracks</p>
+      </div>
+      
+      <div class="tracks-grid">
+        <!-- Track 1: Design -->
+        <div class="track-card" data-track="design">
+          <div class="track-icon">
+            <i class="fas fa-pencil-ruler"></i>
+          </div>
+          <h3>Product Design</h3>
+          <p>Master UI/UX, Figma, and design thinking methodologies</p>
+          <ul class="track-topics">
+            <li>Figma Prototyping</li>
+            <li>User Research</li>
+            <li>Design Systems</li>
+          </ul>
+          <a href="#" class="btn-track">View Workshops</a>
+        </div>
+        
+        <!-- Track 2: Frontend -->
+        <div class="track-card" data-track="frontend">
+          <div class="track-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Frontend Development</h3>
+          <p>Build responsive websites with modern frameworks</p>
+          <ul class="track-topics">
+            <li>React/Next.js</li>
+            <li>CSS Animations</li>
+            <li>Web Performance</li>
+          </ul>
+          <a href="#" class="btn-track">View Workshops</a>
+        </div>
+        
+        <!-- Track 3: Backend -->
+        <div class="track-card" data-track="backend">
+          <div class="track-icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <h3>Backend Engineering</h3>
+          <p>Develop scalable APIs and cloud infrastructure</p>
+          <ul class="track-topics">
+            <li>Node.js</li>
+            <li>Google Cloud</li>
+            <li>Database Design</li>
+          </ul>
+          <a href="#" class="btn-track">View Workshops</a>
+        </div>
+        
+        <!-- Track 4: Mobile -->
+        <div class="track-card" data-track="mobile">
+          <div class="track-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>Mobile Development</h3>
+          <p>Create cross-platform mobile experiences</p>
+          <ul class="track-topics">
+            <li>Flutter</li>
+            <li>Firebase Integration</li>
+            <li>App Store Optimization</li>
+          </ul>
+          <a href="#" class="btn-track">View Workshops</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Events Section -->
+    <section class="events" id="events">
+        <div class="container">
+            <div class="section-header">
+                <h2>Upcoming Events</h2>
+                <p>Join our next events and connect with the community</p>
+            </div>
+            <div class="events-grid">
+                <!-- Event cards will be loaded dynamically from JavaScript -->
+            </div>
+        </div>
+        <div class="countdown-container">
+        <div class="countdown-title">Next Event Starts In</div>
+        <div class="countdown-subtitle">Flutter Workshop • June 15, 2023</div>
+        
+        <div class="countdown-timer">
+            <div class="countdown-box">
+                <div class="countdown-value" id="days">00</div>
+                <div class="countdown-label">Days</div>
+            </div>
+            <div class="countdown-box">
+                <div class="countdown-value" id="hours">00</div>
+                <div class="countdown-label">Hours</div>
+            </div>
+            <div class="countdown-box">
+                <div class="countdown-value" id="minutes">00</div>
+                <div class="countdown-label">Minutes</div>
+            </div>
+            <div class="countdown-box">
+                <div class="countdown-value" id="seconds">00</div>
+                <div class="countdown-label">Seconds</div>
+            </div>
+
+        </div>
+    </div>
+    <div class="view-all">
+                <a href="#" class="btn-secondary">View Past Events</a>
+            </div>
+    </section>
+     
+
+
+    <!-- Past Events Gallery -->
+    <section class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Past Events Gallery</h2>
+                <p>See what we've been up to recently</p>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="image00004.jpeg" alt="Event 1">
+                    <div class="gallery-overlay">
+                        <h3>Flutter Workshop</h3>
+                        <p>March 2022</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="image00005.jpeg" alt="Event 2">
+                    <div class="gallery-overlay">
+                        <h3>Google I/O Extended</h3>
+                        <p>May 2022</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="image00006.jpeg" alt="Event 3">
+                    <div class="gallery-overlay">
+                        <h3>Cloud Study Jam</h3>
+                        <p>October 2022</p>
+                    </div>
+                </div>
+                 <div class="gallery-item">
+                    <img src="image00007.jpeg" alt="Event 3">
+                    <div class="gallery-overlay">
+                        <h3>Blockchain event</h3>
+                        <p>Decemeber 2022</p>
+                    </div>
+                    
+                </div>
+                 <div class="gallery-item">
+                    <img src="image00017.jpeg" alt="Event 3">
+                    <div class="gallery-overlay">
+                        <h3>Web3 events 2025</h3>
+                        <p>October 2022</p>
+                    </div>
+                </div>
+                 <div class="gallery-item">
+                    <img src="image00012.jpeg" alt="Event 3">
+                    <div class="gallery-overlay">
+                        <h3>AI- inclusion 2023</h3>
+                        <p>October 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Team</h2>
+                <p>The passionate people behind GDG Babcock</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="Afolabi Oluwole - Data Structures & Algorithms Co-lead.png" alt="Team Member">
+                    <h3>Afolabi Oluwole</h3>
+                    <p>Data Structure & Algorithms Co-Lead </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="Ajala Murewa Mobile Development Co-Lead.jpg" alt="Team Member">
+                    <h3>Ajala Murewa</h3>
+                    <p> Mobile Development Co-Lead</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="Ajao-Rotimi Favour- Media and Marketing Co Lead.jpg" alt="Team Member">
+                    <h3>Ajao-Rotimi Favour</h3>
+                    <p>Media and Marketing Co Lead</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="Akaaha Victor - Backend Co-Lead.png" alt="Team Member">
+                    <h3>Ajao-Rotimi Favour</h3>
+                    <p>Backend Co-Lead</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="Anjolaoluwa Ajayi - Data and AI Lead.png" alt="Team Member">
+                    <h3>Anjolaoluwa Ajayi </h3>
+                    <p>Data and AI Lead</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="Ayomide Soji-Oni - Web3 Lead.jpg" alt="Team Member">
+                    <h3>Ayomide Soji-Oni</h3>
+                    <p>Web3 Lead</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="Ifeanyi Hope- Frontend Co lead.jpg" alt="Team Member">
+                    <h3>Ifeanyi Hope</h3>
+                    <p>co-lead</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                 <div class="team-member">
+                    <img src="Chukwuneku Akpotowho - Organizer.jpg" alt="Team Member">
+                    <h3>Chukwuneku Akpotowho</h3>
+                    <p>Organizer</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Members Say</h2>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <p>"GDG Babcock helped me transition from a beginner to a confident developer. The workshops are practical and the community is supportive."</p>
+                    <div class="author">
+                        <h4>Sarah Williams</h4>
+                        <p>Computer Science Student</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"The networking opportunities at GDG events led me to my current internship. I'm grateful for this community!"</p>
+                    <div class="author">
+                        <h4>David Okafor</h4>
+                        <p>Software Engineering Student</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"As a female in tech, I found GDG Babcock to be an inclusive space to learn and grow my skills without fear of judgment."</p>
+                    <div class="author">
+                        <h4>Amina Mohammed</h4>
+                        <p>Frontend Developer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-dots"></div>
+                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Have questions or want to collaborate? Reach out to us!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Babcock University, Ilishan-Remo, Ogun State, Nigeria</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>gdg.babcock@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+234 812 345 6789</p>
+                    </div>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for event updates and tech news</p>
+                <form>
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>GDG Babcock</h3>
+                    <p>Google Developer Group at Babcock University, bringing together developers and tech enthusiasts.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Google Developers</a></li>
+                        <li><a href="#">GDG Program</a></li>
+                        <li><a href="#">Study Jams</a></li>
+                        <li><a href="#">I/O Extended</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 GDG Babcock University. All rights reserved.</p>
+                <p>GDG Babcock is an independent group; our activities and the opinions expressed here should in no way be linked to Google, the corporation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Social Media -->
+    <div class="floating-social">
+        <a href="#" class="floating-social-item whatsapp"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="floating-social-item telegram"><i class="fab fa-telegram"></i></a>
+        <a href="#" class="floating-social-item twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="script.js"></script>
+    <script src="tracks-animation.js"></script>
+</body>
+</html>
